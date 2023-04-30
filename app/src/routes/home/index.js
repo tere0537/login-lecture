@@ -1,10 +1,10 @@
 "use strict"
 
 const express = require("express");
-const { hello , login } = require("./home.ctrl");
+const { home , login } = require("./home.ctrl");
 const router = express.Router();
 
-router.get("/", hello)
+router.get("/", home)
 
 router.get("/login", login)
 

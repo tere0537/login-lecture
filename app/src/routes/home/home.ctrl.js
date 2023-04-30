@@ -1,5 +1,5 @@
 "use strict"
-const hello = (req, res) => {
+const home = (req, res) => {
     res.render("home/index");
 };
 
@@ -8,6 +8,6 @@ const login = (req, res) => {
 };
 
 module.exports ={
-    hello,
+    home,
     login,
 }
