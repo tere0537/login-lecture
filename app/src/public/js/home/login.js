@@ -20,6 +20,13 @@ function login() {
     })
         .then((res) => res.json())
         .then((res) => {
-        
+            if (res.success) { // 로그인 성공시 /로 이동
+                location.href = "/";   
+            } else {
+                alert(res.msg); // 로그인 실패
+            }
+        })
+        .catch((err) => { // 오류처리
+            console.err("로그인중 애러 발생");
         });
 };
