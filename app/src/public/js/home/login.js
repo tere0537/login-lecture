@@ -3,7 +3,7 @@
 const loginForm = document.querySelector(".login-form");
 const id = loginForm.querySelector("#id");
 const pwd = loginForm.querySelector("#pwd");
-const loginBtn = loginForm.querySelector("button");
+const loginBtn = loginForm.querySelector("#button");
 
 loginBtn.addEventListener("click", login);
 
